@@ -18,8 +18,8 @@ class SuzuriClient():
     def getUnreads(self):
         return self._get("activities/unreads")
 
-    def getChoice(self, choiceID):
-        return self._get("choices/" + str(choiceID))
+    def getChoice(self, choiceId):
+        return self._get("choices/" + str(choiceId))
 
     def createChoice(
             self, title, description=None,
