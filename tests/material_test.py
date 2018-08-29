@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import json
 import pytest  # NOQA
 from SuzuriTest import SuzuriTest
