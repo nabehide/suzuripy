@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/nabehide/suzuripy.svg?branch=master)](https://travis-ci.org/nabehide/suzuripy)
+[![Coverage Status](https://coveralls.io/repos/github/nabehide/suzuripy/badge.svg?branch=master)](https://coveralls.io/github/nabehide/suzuripy?branch=master)
+
 # suzuripy
 [SUZURI API](https://suzuri.jp/developer/documentation/v1) Wrapper for Python.
 
