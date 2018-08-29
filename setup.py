@@ -6,7 +6,7 @@ setup(
     packages=[
         "suzuripy",
     ],
-    version="1.0.0",
+    version="1.0.1",
     description="SUZURI API Wrapper for Python.",
     author="nabehide",
     author_email="temp@temp.com",
