@@ -1,1 +1,1 @@
-from suzuripy.suzuripy import SuzuriClient
+from .suzuripy import SuzuriClient
