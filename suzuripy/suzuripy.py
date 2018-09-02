@@ -120,12 +120,13 @@ class SuzuriClient():
     def _makeDict(self, variableNames, *args):
         d = {}
         for item in args:
-            if item is not None:
-                for i in variableNames.keys():
-                    if id(variableNames[i]) == id(item):
-                        key = i
-                        break
-                d[key] = item
+            if item is None:
+                continue
+            for i in variableNames.keys():
+                if id(variableNames[i]) == id(item):
+                    key = i
+                    break
+            d[key] = item
         return d
 
     def _get(self, endpoint, payloads=None):
@@ -136,17 +137,15 @@ class SuzuriClient():
         )
 
     def _post(self, endpoint, data):
+        url, data, headers = self._getArgs(endpoint, data)
         return requests.post(
-            self.mainURL + endpoint,
-            data=json.dumps(data),
-            headers=self.headers,
+            url=url, data=data, headers=headers
         )
 
     def _put(self, endpoint, data):
+        url, data, headers = self._getArgs(endpoint, data)
         return requests.put(
-            self.mainURL + endpoint,
-            data=json.dumps(data),
-            headers=self.headers,
+            url=url, data=data, headers=headers
         )
 
     def _delete(self, endpoint):
@@ -154,3 +153,6 @@ class SuzuriClient():
             self.mainURL + endpoint,
             headers=self.headers,
         )
+
+    def _getArgs(self, endpoint, data):
+        return [self.mainURL + endpoint, json.dumps(data), self.headers]
