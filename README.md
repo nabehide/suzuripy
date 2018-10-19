@@ -2,6 +2,7 @@
 [![CircleCI](https://circleci.com/gh/nabehide/suzuripy.svg?style=svg)](https://circleci.com/gh/nabehide/suzuripy)
 [![Coverage Status](https://coveralls.io/repos/github/nabehide/suzuripy/badge.svg?branch=master)](https://coveralls.io/github/nabehide/suzuripy?branch=master)
 [![codecov](https://codecov.io/gh/nabehide/suzuripy/branch/master/graph/badge.svg)](https://codecov.io/gh/nabehide/suzuripy)
+[![PyPI version](https://badge.fury.io/py/suzuripy.svg)](https://badge.fury.io/py/suzuripy)
 [![Requirements Status](https://requires.io/github/nabehide/suzuripy/requirements.svg?branch=master)](https://requires.io/github/nabehide/suzuripy/requirements/?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/nabehide/suzuripy.svg)](https://github.com/nabehide/suzuripy/stargazers)
